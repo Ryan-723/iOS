@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kAP-yA-PKa">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="__8829850_Lab5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="115460722-cosmos-space-planets-stars-seamless-pattern-space-univrse-black-and-white-sketch-galaxies-and" translatesAutoresizingMaskIntoConstraints="NO" id="Ltk-YF-KN6">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="bZZ-G3-4fa">
+                                <rect key="frame" x="162.5" y="338" width="89" height="220"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsQ-8I-lML">
+                                        <rect key="frame" x="0.0" y="0.0" width="89" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="6IR-2N-r9O"/>
+                                        </constraints>
+                                        <state key="normal" title="Level 1 Story"/>
+                                        <connections>
+                                            <segue destination="xhm-cm-A9s" kind="show" id="8dP-km-gz7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UbA-Ck-3Uc">
+                                        <rect key="frame" x="0.0" y="90" width="89" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="EGD-E1-iZZ"/>
+                                        </constraints>
+                                        <state key="normal" title="Level 2 Story"/>
+                                        <connections>
+                                            <segue destination="gq0-xC-uKc" kind="show" id="fCh-mu-PlI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MqC-Tz-xRG">
+                                        <rect key="frame" x="0.0" y="180" width="89" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="1Pf-1a-LxV"/>
+                                        </constraints>
+                                        <state key="normal" title="Info"/>
+                                        <connections>
+                                            <segue destination="yPp-Ls-Tdo" kind="show" id="vdf-nn-OWp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bZZ-G3-4fa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="22a-8c-LLX"/>
+                            <constraint firstItem="Ltk-YF-KN6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6nY-qq-obG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ltk-YF-KN6" secondAttribute="bottom" id="JY7-rN-SMe"/>
+                            <constraint firstItem="Ltk-YF-KN6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="TLw-5u-Tag"/>
+                            <constraint firstItem="bZZ-G3-4fa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="d1R-mV-1ah"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ltk-YF-KN6" secondAttribute="trailing" id="xjl-Mv-k3d"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3IH-kt-xoY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aZh-UL-sXh">
+            <objects>
+                <navigationController id="kAP-yA-PKa" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="n15-o7-BAa">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="K1l-ci-eAH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tO5-N2-X6b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-619" y="94"/>
+        </scene>
+        <!--Info Page-->
+        <scene sceneID="IEg-hM-Dbk">
+            <objects>
+                <viewController id="yPp-Ls-Tdo" customClass="infoPage" customModule="__8829850_Lab5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wJp-Ff-9fU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="115460722-cosmos-space-planets-stars-seamless-pattern-space-univrse-black-and-white-sketch-galaxies-and" translatesAutoresizingMaskIntoConstraints="NO" id="vaR-2H-NZE">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j4r-ml-Kl1">
+                                <rect key="frame" x="77" y="198" width="260" height="500"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="3hz-Sv-JN4"/>
+                                    <constraint firstAttribute="height" constant="500" id="Bck-4y-f9g"/>
+                                </constraints>
+                                <string key="text">is a captivating story app that offers a wide range of tales tailored for two reading levels. Young adventurers aged 3 and above can enjoy enchanting stories filled with colorful illustrations, while older readers aged 10 and beyond can embark on thrilling quests with complex plots, mythical creatures, and age-appropriate vocabulary. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aQN-Tf-J1x"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vaR-2H-NZE" firstAttribute="top" secondItem="aQN-Tf-J1x" secondAttribute="top" id="Mkt-fH-Chu"/>
+                            <constraint firstItem="aQN-Tf-J1x" firstAttribute="bottom" secondItem="vaR-2H-NZE" secondAttribute="bottom" id="OTx-73-w8R"/>
+                            <constraint firstItem="j4r-ml-Kl1" firstAttribute="centerY" secondItem="wJp-Ff-9fU" secondAttribute="centerY" id="SGB-S1-Unk"/>
+                            <constraint firstItem="vaR-2H-NZE" firstAttribute="leading" secondItem="aQN-Tf-J1x" secondAttribute="leading" id="Vhg-lE-Tmy"/>
+                            <constraint firstItem="aQN-Tf-J1x" firstAttribute="trailing" secondItem="vaR-2H-NZE" secondAttribute="trailing" id="caT-Pu-6kK"/>
+                            <constraint firstItem="j4r-ml-Kl1" firstAttribute="centerX" secondItem="wJp-Ff-9fU" secondAttribute="centerX" id="xwm-l0-cNJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="cfi-2z-OeF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aYS-ss-8W0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-636.23188405797111" y="818.97321428571422"/>
+        </scene>
+        <!--Level One-->
+        <scene sceneID="Pni-CI-qgE">
+            <objects>
+                <viewController id="xhm-cm-A9s" customClass="levelOne" customModule="__8829850_Lab5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="48V-ac-Red">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="115460722-cosmos-space-planets-stars-seamless-pattern-space-univrse-black-and-white-sketch-galaxies-and" translatesAutoresizingMaskIntoConstraints="NO" id="7cB-LC-Ab2">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="cFH-kO-Pcv">
+                                <rect key="frame" x="61" y="383" width="292" height="130"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WOz-b0-KBB">
+                                        <rect key="frame" x="0.0" y="0.0" width="292" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.63866856559999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="N8k-Pr-krJ"/>
+                                        </constraints>
+                                        <state key="normal" title="Benny and Sammy's Enchanted Friendship"/>
+                                        <connections>
+                                            <segue destination="unP-oc-f6B" kind="show" id="lTH-gX-azw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEv-CV-fXF">
+                                        <rect key="frame" x="0.0" y="90" width="292" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.63866856559999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="4DD-Y0-Ofu"/>
+                                        </constraints>
+                                        <state key="normal" title="The Magical Quest of Oliver the Wizard"/>
+                                        <connections>
+                                            <segue destination="2Yj-CM-kxL" kind="show" id="8KK-RC-Gae"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Y2r-YX-ce4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cFH-kO-Pcv" firstAttribute="centerY" secondItem="48V-ac-Red" secondAttribute="centerY" id="DVZ-9F-q0d"/>
+                            <constraint firstItem="Y2r-YX-ce4" firstAttribute="trailing" secondItem="7cB-LC-Ab2" secondAttribute="trailing" id="Fb2-Q4-y5y"/>
+                            <constraint firstItem="7cB-LC-Ab2" firstAttribute="leading" secondItem="Y2r-YX-ce4" secondAttribute="leading" id="XB0-DF-Fwo"/>
+                            <constraint firstItem="cFH-kO-Pcv" firstAttribute="centerX" secondItem="48V-ac-Red" secondAttribute="centerX" id="Ycx-ux-8fC"/>
+                            <constraint firstItem="Y2r-YX-ce4" firstAttribute="bottom" secondItem="7cB-LC-Ab2" secondAttribute="bottom" id="aOF-II-P7V"/>
+                            <constraint firstItem="7cB-LC-Ab2" firstAttribute="top" secondItem="Y2r-YX-ce4" secondAttribute="top" id="f8S-uO-f3O"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="FvF-o5-5fA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="95p-Yc-N6K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1005.7971014492755" y="93.75"/>
+        </scene>
+        <!--Level One St One Pg One-->
+        <scene sceneID="aIS-MO-L1x">
+            <objects>
+                <viewController id="unP-oc-f6B" customClass="levelOneStOnePgOne" customModule="__8829850_Lab5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4q1-OU-h7z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="115460722-cosmos-space-planets-stars-seamless-pattern-space-univrse-black-and-white-sketch-galaxies-and" translatesAutoresizingMaskIntoConstraints="NO" id="tTU-cB-Ycw">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wTc-C2-WtM">
+                                <rect key="frame" x="77" y="178" width="260" height="540"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBp-H7-Byb">
+                                        <rect key="frame" x="0.0" y="0.0" width="260" height="500"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="500" id="3VK-ud-cpN"/>
+                                            <constraint firstAttribute="width" constant="260" id="4MK-cQ-cw2"/>
+                                        </constraints>
+                                        <string key="text">Once upon a time, in a magical forest, there was a little bear named Benny. Benny loved to explore and make new friends. One day, he met a kind squirrel named Sammy. They played together, climbed trees, and had the best time ever. They became best friends and had many more adventures in the forest, always making each other smile.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdb-80-95j">
+                                        <rect key="frame" x="0.0" y="500" width="260" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.63866856559999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="JRa-GL-zsb"/>
+                                        </constraints>
+                                        <state key="normal" title="Turn Page"/>
+                                        <connections>
+                                            <segue destination="MIX-fP-g1O" kind="show" id="dxs-39-DBK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HsW-aC-Ofm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tTU-cB-Ycw" firstAttribute="top" secondItem="HsW-aC-Ofm" secondAttribute="top" id="E2F-CV-rRi"/>
+                            <constraint firstItem="wTc-C2-WtM" firstAttribute="centerY" secondItem="4q1-OU-h7z" secondAttribute="centerY" id="JkX-TK-Ncy"/>
+                            <constraint firstItem="wTc-C2-WtM" firstAttribute="centerX" secondItem="4q1-OU-h7z" secondAttribute="centerX" id="KrV-Lh-arn"/>
+                            <constraint firstItem="HsW-aC-Ofm" firstAttribute="bottom" secondItem="tTU-cB-Ycw" secondAttribute="bottom" id="S0n-Rc-gMp"/>
+                            <constraint firstItem="HsW-aC-Ofm" firstAttribute="trailing" secondItem="tTU-cB-Ycw" secondAttribute="trailing" id="X3N-j3-pC9"/>
+                            <constraint firstItem="tTU-cB-Ycw" firstAttribute="leading" secondItem="HsW-aC-Ofm" secondAttribute="leading" id="zvl-vt-BFH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="lFg-oq-gye"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3cj-Jn-EQp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1766.6666666666667" y="93.75"/>
+        </scene>
+        <!--Level One St Two-->
+        <scene sceneID="9UO-n0-Q4l">
+            <objects>
+                <viewController id="2Yj-CM-kxL" customClass="levelOneStTwo" customModule="__8829850_Lab5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lzk-jK-BlV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="115460722-cosmos-space-planets-stars-seamless-pattern-space-univrse-black-and-white-sketch-galaxies-and" translatesAutoresizingMaskIntoConstraints="NO" id="T0n-xe-hcR">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mpr-SL-Wy3">
+                                <rect key="frame" x="77" y="198" width="260" height="500"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="Bxh-AF-whp"/>
+                                    <constraint firstAttribute="height" constant="500" id="f08-lW-KX5"/>
+                                </constraints>
+                                <string key="text">Once upon a time, there was a little duckling named Daisy. Daisy loved to swim and explore the pond with her friends. One day, she found a beautiful, sparkly feather floating on the water. Daisy picked it up and showed it to her friends, and they all danced and quacked with joy. They realized that even small things can bring big happiness. And from that day on, Daisy and her friends always looked for sparkles of joy in their adventures. The end.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WpD-GD-p53"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WpD-GD-p53" firstAttribute="bottom" secondItem="T0n-xe-hcR" secondAttribute="bottom" id="9C3-Y6-8vS"/>
+                            <constraint firstItem="T0n-xe-hcR" firstAttribute="leading" secondItem="WpD-GD-p53" secondAttribute="leading" id="BNo-fe-YV5"/>
+                            <constraint firstItem="Mpr-SL-Wy3" firstAttribute="centerY" secondItem="lzk-jK-BlV" secondAttribute="centerY" id="FZe-v3-Sbm"/>
+                            <constraint firstItem="T0n-xe-hcR" firstAttribute="top" secondItem="WpD-GD-p53" secondAttribute="top" id="RWv-eX-7km"/>
+                            <constraint firstItem="WpD-GD-p53" firstAttribute="trailing" secondItem="T0n-xe-hcR" secondAttribute="trailing" id="gtw-Q8-nGr"/>
+                            <constraint firstItem="Mpr-SL-Wy3" firstAttribute="centerX" secondItem="lzk-jK-BlV" secondAttribute="centerX" id="l8C-IE-6Fb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="voI-3K-pUb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3hE-hz-xeH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1766.6666666666667" y="818.97321428571422"/>
+        </scene>
+        <!--Level One St One Pg Two-->
+        <scene sceneID="TGl-GM-vZ5">
+            <objects>
+                <viewController id="MIX-fP-g1O" customClass="levelOneStOnePgTwo" customModule="__8829850_Lab5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O5n-mT-hOJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="115460722-cosmos-space-planets-stars-seamless-pattern-space-univrse-black-and-white-sketch-galaxies-and" translatesAutoresizingMaskIntoConstraints="NO" id="4KQ-wV-yej">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFv-ET-fDW">
+                                <rect key="frame" x="77" y="198" width="260" height="500"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="5Dl-6U-f2U"/>
+                                    <constraint firstAttribute="width" constant="260" id="LLX-IP-BSw"/>
+                                </constraints>
+                                <string key="text">In their forest home, Benny and Sammy discovered a hidden treasure—a shiny, golden acorn. They decided to share it with all their animal friends, spreading joy and happiness. From that day on, Benny and Sammy knew that true friendship and sharing were the greatest treasures of all. The end.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yNa-w4-5SD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4KQ-wV-yej" firstAttribute="leading" secondItem="yNa-w4-5SD" secondAttribute="leading" id="CFL-3E-qbh"/>
+                            <constraint firstItem="fFv-ET-fDW" firstAttribute="centerX" secondItem="O5n-mT-hOJ" secondAttribute="centerX" id="eCx-jJ-V2U"/>
+                            <constraint firstItem="yNa-w4-5SD" firstAttribute="trailing" secondItem="4KQ-wV-yej" secondAttribute="trailing" id="pci-jc-6Pz"/>
+                            <constraint firstItem="fFv-ET-fDW" firstAttribute="centerY" secondItem="O5n-mT-hOJ" secondAttribute="centerY" id="wkS-wn-kw2"/>
+                            <constraint firstItem="4KQ-wV-yej" firstAttribute="top" secondItem="yNa-w4-5SD" secondAttribute="top" id="x8n-Em-9nE"/>
+                            <constraint firstItem="yNa-w4-5SD" firstAttribute="bottom" secondItem="4KQ-wV-yej" secondAttribute="bottom" id="xh1-eJ-eHx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="DUy-LQ-MDv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ahx-Ch-ueV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2511.594202898551" y="93.75"/>
+        </scene>
+        <!--Level Two-->
+        <scene sceneID="acz-78-ID5">
+            <objects>
+                <viewController id="gq0-xC-uKc" customClass="levelTwo" customModule="__8829850_Lab5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ue5-QK-oz3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="115460722-cosmos-space-planets-stars-seamless-pattern-space-univrse-black-and-white-sketch-galaxies-and" translatesAutoresizingMaskIntoConstraints="NO" id="I1C-jD-Tyl">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3WG-lI-wI2">
+                                <rect key="frame" x="107" y="428" width="200" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.63866856559999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="vTb-dA-5Ag"/>
+                                </constraints>
+                                <state key="normal" title="The Whirlwind of Imagination"/>
+                                <connections>
+                                    <segue destination="WgF-Md-nkI" kind="show" id="Hoc-ak-bwu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4vj-R6-pO3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="I1C-jD-Tyl" firstAttribute="top" secondItem="4vj-R6-pO3" secondAttribute="top" id="DSq-1u-1qJ"/>
+                            <constraint firstItem="4vj-R6-pO3" firstAttribute="bottom" secondItem="I1C-jD-Tyl" secondAttribute="bottom" id="Jcr-eu-kFe"/>
+                            <constraint firstItem="3WG-lI-wI2" firstAttribute="centerY" secondItem="Ue5-QK-oz3" secondAttribute="centerY" id="YcS-Oi-8g6"/>
+                            <constraint firstItem="3WG-lI-wI2" firstAttribute="centerX" secondItem="Ue5-QK-oz3" secondAttribute="centerX" id="iIS-H0-Gsd"/>
+                            <constraint firstItem="4vj-R6-pO3" firstAttribute="trailing" secondItem="I1C-jD-Tyl" secondAttribute="trailing" id="wa5-NE-YFH"/>
+                            <constraint firstItem="I1C-jD-Tyl" firstAttribute="leading" secondItem="4vj-R6-pO3" secondAttribute="leading" id="zCv-8O-Gzg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="MQC-k9-bQc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U8K-ug-ypG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="1544.8660714285713"/>
+        </scene>
+        <!--Level Two St One Pg One-->
+        <scene sceneID="xXc-r5-3P1">
+            <objects>
+                <viewController id="WgF-Md-nkI" customClass="levelTwoStOnePgOne" customModule="__8829850_Lab5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HFl-2k-nua">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="115460722-cosmos-space-planets-stars-seamless-pattern-space-univrse-black-and-white-sketch-galaxies-and" translatesAutoresizingMaskIntoConstraints="NO" id="IO6-0f-cOf">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="g4k-i6-gfM">
+                                <rect key="frame" x="77" y="178" width="260" height="540"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8B-9i-dXX">
+                                        <rect key="frame" x="0.0" y="0.0" width="260" height="500"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="260" id="3Jq-xC-8kS"/>
+                                            <constraint firstAttribute="height" constant="500" id="gbf-uV-sYe"/>
+                                        </constraints>
+                                        <string key="text">Once upon a time, in a bustling city filled with tall skyscrapers and busy streets, there lived a curious 10-year-old girl named Lily. Lily had an insatiable thirst for knowledge and a wild imagination that led her on incredible journeys. One sunny afternoon, while exploring an old bookstore, Lily stumbled upon a dusty, leather-bound book tucked away on a forgotten shelf. With a sense of wonder, she opened it, and to her astonishment, the words jumped off the pages, engulfing her in a whirlwind of magic. </string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tul-Ek-O0I">
+                                        <rect key="frame" x="0.0" y="500" width="260" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.63866856559999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Gps-b2-RAY"/>
+                                        </constraints>
+                                        <state key="normal" title="Turn Page"/>
+                                        <connections>
+                                            <segue destination="up5-iX-HhM" kind="show" id="4va-Wl-eij"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="40Q-6U-ABV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="40Q-6U-ABV" firstAttribute="bottom" secondItem="IO6-0f-cOf" secondAttribute="bottom" id="LUo-W1-4H5"/>
+                            <constraint firstItem="g4k-i6-gfM" firstAttribute="centerX" secondItem="HFl-2k-nua" secondAttribute="centerX" id="X7a-dA-pe7"/>
+                            <constraint firstItem="40Q-6U-ABV" firstAttribute="trailing" secondItem="IO6-0f-cOf" secondAttribute="trailing" id="YYt-YF-UPr"/>
+                            <constraint firstItem="IO6-0f-cOf" firstAttribute="leading" secondItem="40Q-6U-ABV" secondAttribute="leading" id="nSE-SI-sQs"/>
+                            <constraint firstItem="IO6-0f-cOf" firstAttribute="top" secondItem="40Q-6U-ABV" secondAttribute="top" id="yA8-fI-tLS"/>
+                            <constraint firstItem="g4k-i6-gfM" firstAttribute="centerY" secondItem="HFl-2k-nua" secondAttribute="centerY" id="ygP-Cd-1ZS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9Bn-HM-j2u"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CAQ-3T-wYC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="921.73913043478262" y="1544.8660714285713"/>
+        </scene>
+        <!--Level Two St One Pg Two-->
+        <scene sceneID="oHc-Un-kJ1">
+            <objects>
+                <viewController id="up5-iX-HhM" customClass="levelTwoStOnePgTwo" customModule="__8829850_Lab5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ilr-IG-P1h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="115460722-cosmos-space-planets-stars-seamless-pattern-space-univrse-black-and-white-sketch-galaxies-and" translatesAutoresizingMaskIntoConstraints="NO" id="OJz-Nm-IPw">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOn-aE-e95">
+                                <rect key="frame" x="77" y="198" width="260" height="500"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="JYF-mL-wfr"/>
+                                    <constraint firstAttribute="height" constant="500" id="wCe-Z4-7JA"/>
+                                </constraints>
+                                <mutableString key="text">The book transported her to distant lands, where she encountered mythical creatures, solved puzzles, and helped those in need. Each adventure fueled her curiosity and taught her valuable lessons about bravery, friendship, and the power of imagination. As Lily closed the book, she realized that the greatest adventures are not only found in the pages of a book but also within the depths of our own imagination. With newfound excitement, she couldn't wait to embark on her next thrilling quest, ready to explore the world both outside and within. The end.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vgs-Gz-fct"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OJz-Nm-IPw" firstAttribute="leading" secondItem="vgs-Gz-fct" secondAttribute="leading" id="3eB-4T-fSf"/>
+                            <constraint firstItem="vgs-Gz-fct" firstAttribute="bottom" secondItem="OJz-Nm-IPw" secondAttribute="bottom" id="4JH-I7-t8a"/>
+                            <constraint firstItem="OJz-Nm-IPw" firstAttribute="top" secondItem="vgs-Gz-fct" secondAttribute="top" id="6pG-sO-484"/>
+                            <constraint firstItem="vgs-Gz-fct" firstAttribute="trailing" secondItem="OJz-Nm-IPw" secondAttribute="trailing" id="ddf-53-O5l"/>
+                            <constraint firstItem="xOn-aE-e95" firstAttribute="centerX" secondItem="Ilr-IG-P1h" secondAttribute="centerX" id="l4A-Ab-fkR"/>
+                            <constraint firstItem="xOn-aE-e95" firstAttribute="centerY" secondItem="Ilr-IG-P1h" secondAttribute="centerY" id="zFu-Vk-V6a"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="oTH-zm-9dZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lyA-7J-C13" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1731.8840579710147" y="1544.8660714285713"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="115460722-cosmos-space-planets-stars-seamless-pattern-space-univrse-black-and-white-sketch-galaxies-and" width="1300" height="975"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
